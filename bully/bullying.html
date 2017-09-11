@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Create Secure Passwords</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,700,900" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <img src="../PNG/anti.png" alt="" width="250px" height="auto" style="position:fixed;bottom:-120px;left:-50px;-ms-transform: rotate(15deg);-webkit-transform: rotate(15deg);transform: rotate(15deg);">
+    <div class="navbar"><h1>Block The Bully -  Cyber Savvy</h1>
+      <img id="home" src="../icon.png" alt="" width="35px" height="35px;" style="position:absolute;top:15px;right:30px;">
+    </div>
+    <div class="frameholder">
+      <iframe width="550" height="330"
+        src="https://www.youtube.com/embed/FhdAeCmvtw4">
+      </iframe>
+    </div>
+    <div class="qaa">
+      <div class="line"></div>
+      <h2>Quick Quiz</h2>
+      <p>What Should You Do If Someone Is Bullying You Online?</p>
+      <form class="questions">
+        <input type="radio" id="miniTen" name="characterLength" value="maxTen"> Block Them From Your Social Media Account And Tell A Parent, Guardian or Teacher<br>
+        <input type="radio" name="characterLength" value="miniTen"> Do Nothing And Hope They Stop<br>
+        <input type="radio" name="characterLength" value="notSure"> Neither<br>
+      </form>
+      <p>What Other Effects Could A Post Have?</p>
+      <form class="questions">
+        <input type="radio" name="characterLength" value="maxTen"> A Post Could Hurt Someone's Feelings<br>
+        <input type="radio" name="characterLength" value="lessFive"> A Post Could Damage Someone's Reputation<br>
+        <input type="radio" name="characterLength" value="miniTen"> A Joke You Find Funny Could Be Hurtful For Someone Else<br>
+        <input type="radio" id="miniTena" name="characterLength" value="notSure"> All Of The Above<br>
+      </form>
+      <p class="incor"></p>
+      <button id="btn" type="button" name="button">Submit And Check</button>
+      <button id="btn2" type="button" name="button">Next Lesson</button>
+      <div class="line2"></div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  $('#home').attr('draggable', false);
+      $('#btn').click(function() {
+        if($('#miniTen').is(':checked') && $('#miniTena').is(':checked')) {
+          $('#btn').css('display', 'none');
+          $('.incor').css('color', '#27ae60');
+          $('.incor').html('Well Done That Was Correct!');
+          $('#btn2').css('display', 'block')
+         }else{
+           $('#btn').css('background-color', '#e74c3c');
+           $('.incor').html('Incorrect Please Try Again');
+         }
+      });
+      $('#btn2').click(function(){
+        window.location.href = "../know/know.html";
+      });
+      $('#home').click(function(){
+        window.location.href = "../index.html"
+      });
+  </script>
+  <style media="screen">
+  *{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+  }
+  #home:hover{
+    cursor: pointer;
+  }
+  .navbar{
+    width: 100%;
+    height: 70px;
+    background-color: #1297E0;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  h1{
+    color: white;
+    padding: 15px;
+  }
+  .frameholder{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .line{
+    width: 900px;
+    height: 1px;
+    background-color: #bdc3c7;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .line2{
+    width: 900px;
+    height: 1px;
+    background-color: #bdc3c7;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+  .qaa{
+    position: relative;
+    width: 900px;
+    height: 430px;
+    margin: 0px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+  }
+  h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  .questions{
+    padding: 10px;
+  }
+  .questions input{
+    margin-bottom: 10px;
+  }
+  p{
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  button{
+    float: right;
+    padding: 10px;
+    outline: none;
+    border: 0px;
+    background-color: #27ae60;
+    color: white;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 20px;
+  }
+  .incor{
+    float: left;
+    color: #e74c3c;
+    font-weight: 700;
+  }
+  #btn2{
+    display: none;
+  }
+  button:hover{
+    cursor: pointer;
+  }
+  @media screen and (max-width: 920px) {
+      .qaa{
+        width: 100%;
+        padding: 20px;
+        background-color: #ecf0f1;
+        height: 600px;
+        margin-bottom: 0px;
+      }
+      .line, .line2{
+        display: none;
+      }
+      .navbar{
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      iframe{
+        width: 80%;
+        height: 350px;
+      }
+  }
+  @media screen and (max-width: 1265px) {
+      img{
+        display: none;
+      }
+  }
+
+  </style>
+</html>
